@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXUS DIGITAL — บริษัทพัฒนาซอฟต์แวร์</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise-overlay"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav__logo">
+      <span class="logo-mark">N</span>
+      <span class="logo-text">NEXUS<em>DIGITAL</em></span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#about">เกี่ยวกับเรา</a></li>
+      <li><a href="#products">ผลงาน</a></li>
+      <li><a href="#services">บริการ</a></li>
+      <li><a href="#contact">ติดต่อ</a></li>
+    </ul>
+    <a href="#contact" class="btn btn--nav">เริ่มโปรเจกต์</a>
+    <button class="nav__burger" id="burger" aria-label="เมนู">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">เกี่ยวกับเรา</a></li>
+      <li><a href="#products" class="mobile-link">ผลงาน</a></li>
+      <li><a href="#services" class="mobile-link">บริการ</a></li>
+      <li><a href="#contact" class="mobile-link">ติดต่อ</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__content">
+      <div class="hero__badge reveal">
+        <span class="dot"></span> พัฒนาซอฟต์แวร์ · เชียงใหม่
+      </div>
+      <h1 class="hero__title reveal-up">
+        สร้างดิจิทัล<br />
+        <span class="text-accent">โซลูชัน</span><br />
+        ที่ทรงพลัง
+      </h1>
+      <p class="hero__sub reveal-up delay-1">
+        เราออกแบบและพัฒนาซอฟต์แวร์ระดับมืออาชีพ ตั้งแต่เว็บไซต์หางานไปจนถึงระบบบัญชีออนไลน์ ครบวงจรในที่เดียว
+      </p>
+      <div class="hero__cta reveal-up delay-2">
+        <a href="#products" class="btn btn--primary">ดูผลงาน</a>
+        <a href="#contact" class="btn btn--ghost">ปรึกษาฟรี →</a>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__orb orb-1"></div>
+      <div class="hero__orb orb-2"></div>
+      <div class="hero__float-card card-1 reveal-up delay-1">
+        <div class="float-icon">💼</div>
+        <span>ระบบหางาน</span>
+      </div>
+      <div class="hero__float-card card-2 reveal-up delay-2">
+        <div class="float-icon">📊</div>
+        <span>โปรแกรมบัญชี</span>
+      </div>
+      <div class="hero__float-card card-3 reveal-up delay-3">
+        <div class="float-icon">🧑‍💻</div>
+        <span>Portfolio</span>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>เลื่อนลง</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat-item reveal">
+          <span class="stat-num" data-target="50">0</span><span class="stat-unit">+</span>
+          <p>โปรเจกต์สำเร็จ</p>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-num" data-target="8">0</span><span class="stat-unit">ปี</span>
+          <p>ประสบการณ์</p>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-num" data-target="30">0</span><span class="stat-unit">+</span>
+          <p>ลูกค้าพอใจ</p>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-num" data-target="4">0</span><span class="stat-unit"></span>
+          <p>ผลิตภัณฑ์หลัก</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__text">
+        <div class="section-label reveal">— เกี่ยวกับเรา</div>
+        <h2 class="section-title reveal-up">
+          ทีมพัฒนาที่<br /><span class="text-accent">เชี่ยวชาญ</span>
+        </h2>
+        <p class="about__desc reveal-up delay-1">
+          NEXUS DIGITAL คือบริษัทซอฟต์แวร์ที่มุ่งเน้นการสร้างผลิตภัณฑ์ดิจิทัลที่ใช้งานได้จริงและตอบโจทย์ธุรกิจไทย ด้วยทีมนักพัฒนาที่มีประสบการณ์กว่า 8 ปี
+        </p>
+        <ul class="about__list reveal-up delay-2">
+          <li>✓ พัฒนาด้วยเทคโนโลยีทันสมัย</li>
+          <li>✓ รองรับภาษาไทยครบถ้วน</li>
+          <li>✓ ดูแลระบบหลังการขาย 24/7</li>
+          <li>✓ ปรับแต่งได้ตามความต้องการ</li>
+        </ul>
+      </div>
+      <div class="about__visual reveal-up delay-1">
+        <div class="about__badge-box">
+          <div class="tech-badge">React</div>
+          <div class="tech-badge">Node.js</div>
+          <div class="tech-badge">MySQL</div>
+          <div class="tech-badge">Vue</div>
+          <div class="tech-badge">Laravel</div>
+          <div class="tech-badge">Docker</div>
+          <div class="tech-badge">AWS</div>
+          <div class="tech-badge">TypeScript</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-label reveal">— ผลงานของเรา</div>
+      <h2 class="section-title reveal-up">ผลิตภัณฑ์<span class="text-accent">หลัก</span></h2>
+      <p class="section-sub reveal-up delay-1">ซอฟต์แวร์ที่เราพัฒนาขึ้นเพื่อตอบสนองความต้องการของธุรกิจไทยโดยเฉพาะ</p>
+
+      <div class="products__grid">
+
+        <!-- Card 1: Job Board -->
+        <article class="product-card reveal-up" data-index="0">
+          <div class="product-card__header" style="--card-color: #f97316;">
+            <div class="product-card__icon">💼</div>
+            <div class="product-card__tag">เว็บแอปพลิเคชัน</div>
+          </div>
+          <div class="product-card__body">
+            <h3>JobLink Thailand</h3>
+            <p>แพลตฟอร์มหางานและรับสมัครงานออนไลน์ เชื่อมต่อนายจ้างและผู้หางานทั่วประเทศ รองรับการโพสต์งาน ค้นหาผู้สมัคร และระบบสัมภาษณ์ออนไลน์</p>
+            <ul class="product-features">
+              <li>ระบบค้นหางานขั้นสูง</li>
+              <li>อัปโหลด Resume / Portfolio</li>
+              <li>แจ้งเตือนผ่าน Email & LINE</li>
+              <li>Dashboard สำหรับ HR</li>
+            </ul>
+            <div class="product-card__footer">
+              <a href="#contact" class="btn btn--card">ดูรายละเอียด →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Accounting -->
+        <article class="product-card reveal-up delay-1" data-index="1">
+          <div class="product-card__header" style="--card-color: #06b6d4;">
+            <div class="product-card__icon">📊</div>
+            <div class="product-card__tag">SaaS Platform</div>
+          </div>
+          <div class="product-card__body">
+            <h3>AccuBooks Pro</h3>
+            <p>โปรแกรมบัญชีออนไลน์สำหรับ SME ไทย ออกใบกำกับภาษี ติดตามรายรับ-รายจ่าย สร้างรายงานทางการเงินได้ครบถ้วน รองรับ VAT และภาษีหัก ณ ที่จ่าย</p>
+            <ul class="product-features">
+              <li>ใบกำกับภาษีอิเล็กทรอนิกส์</li>
+              <li>รายงาน P&L, Balance Sheet</li>
+              <li>เชื่อมต่อ e-Withholding Tax</li>
+              <li>รองรับหลายสาขา</li>
+            </ul>
+            <div class="product-card__footer">
+              <a href="#contact" class="btn btn--card">ดูรายละเอียด →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Portfolio -->
+        <article class="product-card reveal-up delay-2" data-index="2">
+          <div class="product-card__header" style="--card-color: #8b5cf6;">
+            <div class="product-card__icon">🧑‍💻</div>
+            <div class="product-card__tag">Personal Branding</div>
+          </div>
+          <div class="product-card__body">
+            <h3>PortfolioMe</h3>
+            <p>แพลตฟอร์มสร้างเว็บไซต์ประวัติผลงานส่วนบุคคล สำหรับนักพัฒนา นักออกแบบ และฟรีแลนซ์ สร้างได้ง่ายไม่ต้องเขียนโค้ด พร้อม Custom Domain</p>
+            <ul class="product-features">
+              <li>เทมเพลตสวยงาม 50+ แบบ</li>
+              <li>Drag & Drop Builder</li>
+              <li>Custom Domain ฟรี</li>
+              <li>SEO-Friendly</li>
+            </ul>
+            <div class="product-card__footer">
+              <a href="#contact" class="btn btn--card">ดูรายละเอียด →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: Custom -->
+        <article class="product-card product-card--wide reveal-up delay-3" data-index="3">
+          <div class="product-card__header" style="--card-color: #10b981;">
+            <div class="product-card__icon">⚙️</div>
+            <div class="product-card__tag">Custom Solutions</div>
+          </div>
+          <div class="product-card__body">
+            <h3>Custom Development</h3>
+            <p>รับพัฒนาซอฟต์แวร์ตามความต้องการ ครอบคลุมทั้ง Web App, Mobile App, API Integration, ระบบ ERP, CRM และอื่นๆ พร้อมทีม UX/UI ออกแบบประสบการณ์ผู้ใช้งาน</p>
+            <div class="custom-tags">
+              <span>E-commerce</span>
+              <span>ERP System</span>
+              <span>CRM</span>
+              <span>Mobile App</span>
+              <span>API Integration</span>
+              <span>Data Dashboard</span>
+              <span>LMS</span>
+              <span>Booking System</span>
+            </div>
+            <div class="product-card__footer">
+              <a href="#contact" class="btn btn--card">ปรึกษาโปรเจกต์ →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-label reveal">— บริการ</div>
+      <h2 class="section-title reveal-up">เราช่วยคุณ<span class="text-accent">ได้</span></h2>
+      <div class="services__grid">
+        <div class="service-item reveal-up">
+          <div class="service-icon">🎨</div>
+          <h4>UI/UX Design</h4>
+          <p>ออกแบบอินเตอร์เฟสที่สวยงาม ใช้งานง่าย มีประสบการณ์ผู้ใช้ที่ดีเยี่ยม</p>
+        </div>
+        <div class="service-item reveal-up delay-1">
+          <div class="service-icon">💻</div>
+          <h4>Web Development</h4>
+          <p>พัฒนาเว็บแอปพลิเคชันด้วยเทคโนโลยีสมัยใหม่ ทั้ง Frontend และ Backend</p>
+        </div>
+        <div class="service-item reveal-up delay-2">
+          <div class="service-icon">📱</div>
+          <h4>Mobile App</h4>
+          <p>พัฒนาแอปมือถือ iOS และ Android ด้วย React Native และ Flutter</p>
+        </div>
+        <div class="service-item reveal-up delay-3">
+          <div class="service-icon">☁️</div>
+          <h4>Cloud & Hosting</h4>
+          <p>ติดตั้งและดูแลระบบบน Cloud เช่น AWS, GCP พร้อม CI/CD Pipeline</p>
+        </div>
+        <div class="service-item reveal-up">
+          <div class="service-icon">🔒</div>
+          <h4>Security & SEO</h4>
+          <p>ทดสอบความปลอดภัย และ SEO เพื่อให้เว็บไซต์ติดอันดับบน Google</p>
+        </div>
+        <div class="service-item reveal-up delay-1">
+          <div class="service-icon">🛠️</div>
+          <h4>Maintenance</h4>
+          <p>ดูแลและบำรุงรักษาระบบหลังการขาย อัปเดตและแก้ไขปัญหาอย่างรวดเร็ว</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <div class="cta__orb"></div>
+      <h2 class="reveal-up">พร้อมเริ่มต้น<span class="text-accent">โปรเจกต์</span>?</h2>
+      <p class="reveal-up delay-1">ปรึกษาทีมงานของเราได้ฟรี ไม่มีค่าใช้จ่าย</p>
+      <a href="#contact" class="btn btn--primary btn--large reveal-up delay-2">ติดต่อเรา →</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <div class="section-label reveal">— ติดต่อเรา</div>
+        <h2 class="section-title reveal-up">มาคุย<span class="text-accent">กัน</span></h2>
+        <p class="reveal-up delay-1">พร้อมรับฟังความต้องการและเสนอแนวทางที่ดีที่สุดสำหรับธุรกิจของคุณ</p>
+        <div class="contact__details reveal-up delay-2">
+          <div class="contact-item">
+            <span>📍</span>
+            <div>
+              <strong>ที่อยู่</strong>
+              <p>123 ถนนนิมมานเหมินท์ ต.สุเทพ อ.เมือง เชียงใหม่ 50200</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span>📞</span>
+            <div>
+              <strong>โทรศัพท์</strong>
+              <p>053-123-456 | 086-789-0123</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span>✉️</span>
+            <div>
+              <strong>อีเมล</strong>
+              <p>hello@nexusdigital.co.th</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact__form reveal-up delay-2">
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">ชื่อ - นามสกุล</label>
+            <input type="text" id="name" placeholder="กรุณาระบุชื่อ" required />
+          </div>
+          <div class="form-group">
+            <label for="email">อีเมล</label>
+            <input type="email" id="email" placeholder="example@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="project">ประเภทโปรเจกต์</label>
+            <select id="project">
+              <option value="">-- เลือกประเภท --</option>
+              <option>เว็บไซต์หางาน</option>
+              <option>โปรแกรมบัญชี</option>
+              <option>เว็บ Portfolio</option>
+              <option>พัฒนาซอฟต์แวร์ Custom</option>
+              <option>อื่นๆ</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">รายละเอียด</label>
+            <textarea id="message" rows="4" placeholder="บอกเราเกี่ยวกับโปรเจกต์ของคุณ..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">ส่งข้อความ →</button>
+          <div class="form-msg" id="formMsg"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">
+        <span class="logo-mark">N</span>
+        <span class="logo-text">NEXUS<em>DIGITAL</em></span>
+        <p>พัฒนาซอฟต์แวร์ที่ทรงพลัง<br />สำหรับธุรกิจไทย</p>
+      </div>
+      <div class="footer__links">
+        <h5>ผลิตภัณฑ์</h5>
+        <ul>
+          <li><a href="#products">JobLink Thailand</a></li>
+          <li><a href="#products">AccuBooks Pro</a></li>
+          <li><a href="#products">PortfolioMe</a></li>
+          <li><a href="#products">Custom Dev</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h5>บริษัท</h5>
+        <ul>
+          <li><a href="#about">เกี่ยวกับเรา</a></li>
+          <li><a href="#services">บริการ</a></li>
+          <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <div class="footer__social">
+        <h5>ติดตามเรา</h5>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Line">L</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="GitHub">gh</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 NEXUS DIGITAL Co., Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
